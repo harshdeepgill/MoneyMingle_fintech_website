@@ -305,13 +305,15 @@
 
     <!-- Currency Chart Start -->
 
-    <div id="con_container">
+    <div id="converter_container">
         <h1 style="text-align: center;">Convert Money</h1>
         <div class="converter">
             <div class="addha">
                 <h3>Convert From:</h3>
                 <div class="convertor-select-section">
-                    <img id="flag1" class="flag-icon" src="https://flagcdn.com/w320/us.png">
+                    <div class="flag-div">
+                        <img id="flag1" class="flag-icon" src="https://flagcdn.com/w320/us.png">
+                    </div>
                     <select id="fromMoney">
                         <option value="0">Select From ..</option>
                         <!-- other Money options -->
@@ -324,27 +326,29 @@
             <div class="addha">
                 <h3>Convert To:</h3>
                 <div class="convertor-select-section">
-                    <img id="flag2" class="flag-icon" src="https://flagcdn.com/w320/in.png">
+                    <div class="flag-div">
+                        <img id="flag2" class="flag-icon" src="https://flagcdn.com/w320/in.png">
+                    </div>
                     <select id="toMoney">
                         <option value="0">Select To ..</option>
                         <!-- other Money options  -->
                     </select>
                 </div>
             </div>
-            <div class="icon-awwor">
-                <i class="fa-solid fa-equals"></i>
-            </div>
-            <div class="convert-money-display">
-                <h3>Converted Amount</h3>
-                <input id="result" placeholder="Converted Amount" disabled>
-            </div>
+            
 
         </div>
         <div class="entering-section">
-            <input type="number" id="amount" placeholder="Enter Amount">
-            <button onclick="convertMoney()">Convert</button>
+            <div class="input-section">
+                <input type="text" id="amount" placeholder="Enter Amount">
+                <button onclick="convertMoney()">Convert</button>
+            <!-- </div>
+            <div class="convert-money-display">
+                <h3>Converted Amount</h3> -->
+                <input id="result" placeholder="Converted Amount" disabled>
+            </div>
         </div>
-        <div id="result2"></div>
+        <!-- <div id="result2"></div> -->
     </div>
 
     <!-- Currency Chart End -->

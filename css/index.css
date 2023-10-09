@@ -477,7 +477,42 @@ header a:hover {
 
 
 /* converter section start */
-#con_container {
+/* #converter_container{
+    width: 100%;
+
+}
+#converter_container .converter{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#converter_container .converter .addha{
+    width: 45%;
+}
+#converter_container .converter .addha .convertor-select-section{
+    position: relative;
+}
+#converter_container .converter .addha .convertor-select-section .flag-div{
+    position: absolute;
+}
+#converter_container .converter .addha .convertor-select-section select{
+    width: 90%;
+    height: 4rem;
+    font-size: 15px;
+    color: var(--dark-gray);
+    /* padding: 8px;
+    outline: none;
+    border: 2px solid black;
+}
+.convertor-select-section .flag-div{
+    width: 5rem;
+}
+.convertor-select-section .flag-div img{
+    width: 100%;
+} */
+
+#converter_container {
     border: 1px solid var(--main-white-color);
     width: 100%;
     margin: auto;
@@ -486,12 +521,10 @@ header a:hover {
     border-radius: 8px;
     background-color: #fff;
     margin-top: 60px;
-    opacity: 0.5;
-    cursor:not-allowed!important;
+    /* opacity: 0.5; */
+    /* cursor:not-allowed!important; */
 }
-#con_container:hover{
-    pointer-events: none;
-}
+
 .converter {
     display: flex;
     align-items: center;
@@ -503,7 +536,7 @@ header a:hover {
 .convertor-select-section {
     border: 1px solid var(--light-lighter-gray);
     border-radius: 9px;
-    width: 130%;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 15px;
@@ -543,7 +576,9 @@ header a:hover {
 }
 
 .entering-section {
-    margin: 50px 70px;
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -557,6 +592,15 @@ header a:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
     outline: none;
 }
+.entering-section .input-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.input-section input{
+    width: 30%;
+    border-radius: 9px;
+}
 
 .entering-section button {
     background-color: #57887b;
@@ -569,17 +613,10 @@ header a:hover {
     color: var(--headings-color-light);
     font-weight: 500;
     transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 
-#result2 {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 30px;
-    color: var(--headings-color);
-    font-weight: 600;
-    transition: all 0.5s ease-in-out;
-}
 
 
 /* Testimonial Start */
@@ -1428,13 +1465,24 @@ input[type="radio"] {
         left: 117px;
         font-size: 61px;
     }
-    #con_container {
+    #converter_container {
         width: 80%;
     }
     .converter {
         flex-direction: column;
     }
     .convertor-select-section {
+        width: 100%;
+    }
+    .input-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .input-section input{
+        width: 100%;
+    }
+    .input-section button{
         width: 100%;
     }
     #testimonial-container>h1::before {
@@ -1515,9 +1563,9 @@ input[type="radio"] {
     .problem-card {
         min-height: 223px;
     }
-    .entering-section {
+    /* .entering-section {
         margin: 50px 17px;
-    }
+    } */
     .solution-cont h1 {
         font-size: 50px;
     }
@@ -1905,6 +1953,7 @@ input[type="radio"] {
     .footer-col ul li a {
         font-size: 14px;
     }
+    
 }
 
 /* for 425 px screen End */
@@ -1931,6 +1980,7 @@ input[type="radio"] {
     #amount {
         width: 100%;
     }
+    
 }
 
 /* for 425 px screen End */
