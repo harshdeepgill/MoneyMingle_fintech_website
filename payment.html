@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MoneyMingle</title>
+    <link rel="icon" href="images/logo.png">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./css/payment.css">
+
+</head>
+<body>
+    <!-- <img src="images/logo2.png" alt=""> -->
+
+
+
+
+
+    <div class="popup" id="popup">
+        <img src="images/404-tick.png" alt="">
+        <h2>Thank You</h2>
+        <p>Payment Successful</p>
+        <!-- <button type="button" id="okbtn" onclick="closepopup()">OK</button> -->
+        <a href="address.html">OK</a>
+    </div>
+
+
+    <div class="popup1" id="popup1">
+        <img src="images/cross.png" alt="">
+        <h2>Sorry</h2>
+        <p>Some fields are empty <br>
+            please fill all the fields <br>
+            and try again</p>
+        <button type="button" id="okbtn" onclick="closepopup1()">OK</button>
+        <!-- <a href="payment.html" onclick="closepopup1()">OK</a> -->
+    </div>
+
+    <div class="popup2" id="popup2">
+        
+        <h2>plese enter otp</h2>
+        <input id="otp" type="text" placeholder="* * * *">
+        <button type="button" id="okbtn2" >OK</button>
+        <!-- <a href="payment.html" onclick="closepopup1()">OK</a> -->
+    </div>
+
+    <div class="popup3" id="popup3">
+      <h4>your otp is</h4>  
+        <h2>1234</h2>
+       <p>use this to authenticate payment <br>
+    do not share this with anyone <br>
+    valid for 2 mins only</p>
+        <!-- <button type="button" id="okbtn2" >OK</button> -->
+        <!-- <a href="payment.html" onclick="closepopup1()">OK</a> -->
+    </div>
+
+    <div class="popup4" id="popup4">
+        
+          <h2>sorry</h2>
+           <h4>otp did not match</h4> 
+         <p>please enter the correct otp <br> and try again</p>
+          <button type="button" id="okbtn4" >OK</button>
+          <!-- <a href="payment.html" onclick="closepopup1()">OK</a> -->
+      </div>
+
+
+
+<div class="container" id="seccont">
+
+    <div class="card-container">
+
+        <div class="front">
+            <div class="image">
+                <img src="images/chip.png" alt="">
+                <div id="amount"></div>
+                <img src="images/visa.png" alt="">
+            </div>
+            <div class="card-number-box">#### #### #### ####</div>
+            <div class="flexbox">
+                <div class="box">
+                    <span>card holder</span>
+                    <div class="card-holder-name">full name</div>
+                </div>
+                <div class="box">
+                    <span>expires</span>
+                    <div class="expiration">
+                        <span class="exp-month">mm /</span>
+                        <span class="exp-year">yy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back">
+            <div class="stripe"></div>
+            <div class="box">
+                <span>cvv</span>
+                <div class="cvv-box"></div>
+                <img src="images/visa.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+   
+
+
+    <form action="">
+        <div class="inputBox">
+            <span>Amount</span>
+            <input id="amount-add" type="number" class="card-amount-input" maxlength="5">
+        </div>
+        <div class="inputBox">
+            <span>card number</span>
+            <input  type="text" class="card-number-input" maxlength="16">
+        </div>
+        <div class="inputBox">
+            <span>card holder</span>
+            <input  type="text"  class="card-holder-input" maxlength="20">
+        </div>
+        <div class="flexbox">
+            <div class="inputBox">
+                <span>expiration mm</span>
+                <select name="" id="" class="month-input">
+                    <option value="month" selected disabled>month</option>
+                    <option value="01">JANUARY</option>
+                    <option value="02">FEBRUARY</option>
+                    <option value="03">MARCH</option>
+                    <option value="04">APRIL</option>
+                    <option value="05">MAY</option>
+                    <option value="06">JUNE</option>
+                    <option value="07">JULY</option>
+                    <option value="08">AUGUST</option>
+                    <option value="09">SEPTEMBER</option>
+                    <option value="10">OCTOBER</option>
+                    <option value="11">NOVEMBER</option>
+                    <option value="12">DECEMBER</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>expiration yy</span>
+                <select name="" id="" class="year-input">
+                    <option value="year" selected disabled>year</option>
+                    <option value="/ 23">2023</option>
+                    <option value="/ 24">2024</option>
+                    <option value="/ 25">2025</option>
+                    <option value="/ 26">2026</option>
+                    <option value="/ 27">2027</option>
+                    <option value="/ 28">2028</option>
+                    <option value="/ 29">2029</option>
+                    <option value="/ 30">2030</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>cvv</span>
+                <input type="text" maxlength="3" class="cvv-input">
+            </div>
+        </div>
+        <input id="pay" type="submit" value="Proceed to Checkout" class="submit-btn">
+        <!-- <button id="pay" class="submit-btn">Proceed to Checkout</button> -->
+    </form>
+</body>
+</html>
+
+<script src="js\payment.js"></script>
